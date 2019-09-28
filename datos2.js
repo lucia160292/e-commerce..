@@ -6,7 +6,7 @@ function onSignIn(googleUser) {
     console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
     var auth2 = gapi.auth2.getAuthInstance();
     if (auth2.isSignedIn.Ab === true){
-      window.location.href = "https://lucia160292.github.io/e-commerce../login.html";
+      window.location.href = "https://lucia160292.github.io/e-commerce../index.html";
     }
   
     let usuario = profile.getEmail();
