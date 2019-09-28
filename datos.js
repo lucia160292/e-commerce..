@@ -13,7 +13,7 @@ localStorage.setItem("usuario", JSON.stringify(usuario));
 window.location.href = 'index.html';
 console.log(usuario);
 
-
+}
 function getUsuario() {
 let usuario = JSON.parse(localStorage.getItem("usuario"));
 console.log(usuario);
@@ -40,7 +40,7 @@ function onSignIn(googleUser) {
   if (auth2.isSignedIn.Ab === true){
     window.location.href = "https://lucia160292.github.io/e-commerce../";
   }
-  
+
   let usuario = profile.getEmail();
     sessionStorage.setItem('usuario', usuario);
     signOut();
