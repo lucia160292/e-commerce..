@@ -4,7 +4,7 @@ let nombre = document.getElementById('nombre').value;
 let email = document.getElementById('email').value;
 let password = document.getElementById('password').value;
 usuario = {
-  "nombre" : name,
+  "nombre" : nombre,
   "email" : email,
   "password" : password,
 };
