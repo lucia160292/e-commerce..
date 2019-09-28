@@ -36,12 +36,16 @@
                 </form>
               </dl>
 
-                 <div class="g-signin2" data-onsuccess="onSignIn" id="google"></div>
+              <dl>
+                <dd>
+                  <div class="g-signin2" data-onsuccess="onSignIn"></div>
+                </dd>
+
+                <dd>
+                  <a href="#" onclick="signOut()">Sign out</a>
+                </dd>
                 
-
-                <a href="#" onclick="signOut()">Sign out</a>
-
-              
+              </dl>
 
            <script src="datos.js"></script>
            <script src="https://apis.google.com/js/platform.js" async defer></script>
