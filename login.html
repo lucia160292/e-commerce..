@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>Registrate</title>
         <meta name="viecuport" content="width-divice-width,initial-scale=1.0">
+        <meta name = "google-signin-client_id" content = 645867881501-f3piniii3i91n28gaesrime3t94u6rsk.apps.googleusercontent.com>
         <link href="estilo.css" rel="stylesheet" type="text/css">
         
     </head>
@@ -29,14 +30,20 @@
                                                     required minlength="8">
                  </dd>
                  
-                 <dd>
-                  <input type="submit" class="button">
-                 </dd>
+                 <input type="submit" class="button">
+
+                
+               
+                 <div class="g-signin2" data-onsuccess="onSignIn" ></div>
+       
+
+                <a href="#" onclick="signOut()">Sign out</a>
 
               </form>
-           </dl>
+            </dl>
 
            <script src="datos.js"></script>
+           <script src="https://apis.google.com/js/platform.js" async defer></script>
     </body>
 
 </html>
