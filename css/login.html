@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Registrate</title>
+        <meta name="viecuport" content="width-divice-width,initial-scale=1.0">
+        <meta name = "google-signin-client_id" content = 645867881501-f3piniii3i91n28gaesrime3t94u6rsk.apps.googleusercontent.com>
+        <link href="estilo.css" rel="stylesheet" type="text/css">
+        
+    </head>
+
+    <body >
+      <h1>¡BIENVENIDO  A </h1>
+      <h1> e-MERCADO! </h1>
+      
+            <dl>
+              <form action="javascript:void(0)" id="loginForm" onsubmit="guardarDatos()">
+                 <dd>
+                  Nombre: <input type="text" id="nombre" name="name" required autofocus>
+                 </dd>
+
+                 <dd> 
+                   Email: <input type="email" name="email" id="email" required>
+                 </dd>
+     
+                 <dd> 
+                   Introduce una contraseña: <input type="password"
+                                                    name="password"
+                                                    id="password"
+                                                    required minlength="8">
+                 </dd>
+               
+                 
+                 <input type="submit" class="button">
+
+                
+              </dl>
+        </form>
+
+              <dl>
+                <dd>
+                  <button class="butt" >
+
+                  <div class="g-signin2" data-onsuccess="onSignIn"></div>
+
+                  </button>
+                </dd>
+
+                <dd>
+                  <a href="#" onclick="signOut()">Sign out</a>
+                </dd>
+
+              </dl>
+           
+
+            <script src="datos.js"></script>
+         
+           <script src="https://apis.google.com/js/platform.js" async defer></script>
+    </body>
+
+</html>
