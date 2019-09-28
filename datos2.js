@@ -9,7 +9,9 @@ function onSignIn(googleUser) {
       window.location.href = "https://lucia160292.github.io/e-commerce../";
     }
   
-    
+    let usuario = profile.getEmail();
+      sessionStorage.setItem('usuario', usuario);
+      signOut();
 
 
       sessionStorage.setItem("usuario", usuario);
